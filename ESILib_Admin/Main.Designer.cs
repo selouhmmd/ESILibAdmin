@@ -62,12 +62,24 @@
             this.button5 = new System.Windows.Forms.Button();
             this.isbnup = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.newusr = new System.Windows.Forms.TextBox();
+            this.newpass = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.oldusr = new System.Windows.Forms.TextBox();
+            this.oldpass = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -76,6 +88,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.ItemSize = new System.Drawing.Size(25, 100);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -423,6 +436,109 @@
             this.label13.TabIndex = 15;
             this.label13.Text = "ISBN";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.button6);
+            this.tabPage4.Controls.Add(this.oldpass);
+            this.tabPage4.Controls.Add(this.newpass);
+            this.tabPage4.Controls.Add(this.oldusr);
+            this.tabPage4.Controls.Add(this.newusr);
+            this.tabPage4.Controls.Add(this.label17);
+            this.tabPage4.Controls.Add(this.label15);
+            this.tabPage4.Controls.Add(this.label16);
+            this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.label11);
+            this.tabPage4.Location = new System.Drawing.Point(104, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(606, 521);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Change Admin Credentials";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(25, 182);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(84, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "New Password :";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(25, 156);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(86, 13);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "New Username :";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(19, 28);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(191, 20);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Changing Credentials :";
+            // 
+            // newusr
+            // 
+            this.newusr.Location = new System.Drawing.Point(117, 153);
+            this.newusr.Name = "newusr";
+            this.newusr.Size = new System.Drawing.Size(321, 20);
+            this.newusr.TabIndex = 1;
+            // 
+            // newpass
+            // 
+            this.newpass.Location = new System.Drawing.Point(117, 179);
+            this.newpass.Name = "newpass";
+            this.newpass.Size = new System.Drawing.Size(321, 20);
+            this.newpass.TabIndex = 1;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(23, 222);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(160, 23);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Change";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(25, 91);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(78, 13);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Old Password :";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(25, 65);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(80, 13);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Old Username :";
+            // 
+            // oldusr
+            // 
+            this.oldusr.Location = new System.Drawing.Point(117, 62);
+            this.oldusr.Name = "oldusr";
+            this.oldusr.Size = new System.Drawing.Size(321, 20);
+            this.oldusr.TabIndex = 1;
+            // 
+            // oldpass
+            // 
+            this.oldpass.Location = new System.Drawing.Point(117, 88);
+            this.oldpass.Name = "oldpass";
+            this.oldpass.Size = new System.Drawing.Size(321, 20);
+            this.oldpass.TabIndex = 1;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -439,6 +555,8 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -479,5 +597,16 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox isbnup;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox oldpass;
+        private System.Windows.Forms.TextBox newpass;
+        private System.Windows.Forms.TextBox oldusr;
+        private System.Windows.Forms.TextBox newusr;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label11;
     }
 }

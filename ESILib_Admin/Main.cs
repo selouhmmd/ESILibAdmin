@@ -99,6 +99,17 @@ namespace ESILib_Admin
             }
         }
 
-        
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (oldusr.Text == ESILib_Admin.Properties.Settings.Default.Username && oldpass.Text == ESILib_Admin.Properties.Settings.Default.Password && !string.IsNullOrEmpty(newusr.Text) && !string.IsNullOrEmpty(newpass.Text))
+            {
+                ESILib_Admin.Properties.Settings.Default.Username = newusr.Text;
+                ESILib_Admin.Properties.Settings.Default.Password = newpass.Text;
+            }
+            else
+            {
+                MessageBox.Show("Cannot Change Credentials","Wrong Credentials Or Empty New Credentials",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
     }
 }

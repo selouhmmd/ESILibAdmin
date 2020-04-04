@@ -25,11 +25,15 @@ namespace ESILib_Admin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (pass.Text == ESILib_Admin.Properties.Resources.AdminPassword && usr.Text == ESILib_Admin.Properties.Resources.AdminUsername)
+            if (usr.Text == ESILib_Admin.Properties.Settings.Default.Username && pass.Text == ESILib_Admin.Properties.Settings.Default.Password)
             {
                 Main main = new Main();
                 main.Show();
                 this.WindowState = FormWindowState.Minimized;
+            }
+            else
+            {
+                MessageBox.Show("Wrong Credentials", "The Credentials Hat Have Been Entered Are Wrong", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
