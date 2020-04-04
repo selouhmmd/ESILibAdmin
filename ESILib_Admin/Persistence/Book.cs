@@ -12,7 +12,7 @@
         
         public override string ToString()
         {
-            return $"{Title} - by {Author}";
+            return $"{Title} - by {Author} --- {ISBN}";
         }
     }
 }
